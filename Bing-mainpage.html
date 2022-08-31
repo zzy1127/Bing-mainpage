@@ -7,11 +7,12 @@
         <link rel="stylesheet" href="CSS.css">
     </head>
     <body>
+        <script src="myScript.js"></script>
         <div class="header">
             <div class="middle">
                 <ul>
                     <li>
-                        <img src="images/logo.png" style="position: relative; top:8px;">
+                        <img src="images/logo.png" style="position: relative; top:8px;" id="logo">
                     </li>
                     <li style="margin-left: 60px;">
                         <a href="https://cn.bing.com/images/trending?form=Z9LH" class="headera">图片</a>
@@ -34,9 +35,9 @@
                         </div>
                     </li>
                     <li class="right">
-                        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252fchrome%252fnewtab%253fwlexpsignin%253d1%26sig%3d0E41AF4E86F06F3D3EE3BD4287B36E9E&wp=MBI_SSL&lc=2052&CSRFToken=2ae5a68b-5b9a-43ce-9784-5faebeefe427&aadredir=1" style="position: relative; top:20px;"><img src="images/login.png"></a>
+                        <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&id=264960&wreply=https%3a%2f%2fcn.bing.com%2fsecure%2fPassport.aspx%3frequrl%3dhttps%253a%252f%252fcn.bing.com%252fchrome%252fnewtab%253fwlexpsignin%253d1%26sig%3d0E41AF4E86F06F3D3EE3BD4287B36E9E&wp=MBI_SSL&lc=2052&CSRFToken=2ae5a68b-5b9a-43ce-9784-5faebeefe427&aadredir=1" style="position: relative; top:20px;"><img src="images/login.png" id="login"></a>
                         <div class="tooltip3">
-                            <a href=""><img style="position: relative; top:33px;left:13px;" src="images/bar.png" ></a>
+                            <a href=""><img style="position: relative; top:33px;left:13px;" src="images/bar.png" id="bar"></a>
                             <span class="tooltiptext3">设置和快速链接</span>
                         </div>
                     </li>
@@ -50,7 +51,7 @@
                 <p class="searchp2"><a href="" style="text-decoration: none; color: black;">国际版</a></p>
             </div>
             <form>
-                <input type="text">
+                <input type="text" onblur=rechange() onfocus="changeBrightness()">
                 <div class="tooltip">
                     <a href=""><img src="images/p1.png" class="p1"></a>
                     <span class="tooltiptextp1">搜索网页</span>
